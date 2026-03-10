@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* إعدادات أساسية لضبط الخط العربي والاتجاه */
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  body {
+    direction: rtl;
+    background-color: #f8fafc;
+  }
+}
