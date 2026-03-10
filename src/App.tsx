@@ -35,7 +35,7 @@ const App = () => {
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
               {/* تأكد من رفع ملف Rased-Parents.apk في مجلد public ليعمل هذا الزر */}
               <a 
-                href="/Rased-Parents.apk" 
+              href="./Rased-Parents.apk" 
                 download
                 className="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-[0_10px_25px_rgba(245,158,11,0.4)] hover:scale-105 transition-transform"
               >
@@ -109,11 +109,11 @@ const App = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <div className="relative border-[8px] border-slate-800 rounded-[3rem] overflow-hidden shadow-2xl w-64 h-[500px] bg-white">
-              <img src="/login-screenshot.jpg" alt="شاشة تسجيل الدخول" className="w-full h-full object-cover" />
+              <img src="./login-screenshot.jpg" alt="شاشة تسجيل الدخول" className="w-full h-full object-cover" />
             </div>
 
             <div className="relative border-[8px] border-slate-800 rounded-[3rem] overflow-hidden shadow-2xl w-64 h-[500px] bg-white md:-mt-12">
-              <img src="/dashboard-screenshot.jpg" alt="لوحة المتابعة" className="w-full h-full object-cover" />
+              <img src="./dashboard-screenshot.jpg" alt="لوحة المتابعة" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
