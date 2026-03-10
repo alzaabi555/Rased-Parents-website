@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // اكتب هنا اسم مستودع الموقع الجديد الذي أنشأته على جيت هب (بين علامتي / /)
-  base: '/rased-website/', 
+  base: '/Rased-Parents-website/', 
 })
