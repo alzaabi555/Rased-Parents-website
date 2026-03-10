@@ -22,7 +22,7 @@ const App = () => {
             {/* الترويسة: الأيقونة (مصغرة) بجوار العنوان */}
             <div className="flex items-center gap-4 mb-2">
               <div className="w-16 h-16 md:w-20 md:h-20 bg-white/10 rounded-2xl p-2 border border-white/20 shadow-lg shrink-0">
-                <img src="./logo.png" alt="أيقونة راصد" className="w-full h-full object-contain drop-shadow-md" />
+                <img src="./logo-512x512.png" alt="أيقونة راصد" className="w-full h-full object-contain drop-shadow-md" />
               </div>
               <div>
                 <span className="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-full px-3 py-0.5 text-[11px] font-bold mb-1.5">
