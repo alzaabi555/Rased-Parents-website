@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # تأكد أن اسم الفرع الأساسي لديك هو main
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Build Web
+      - name: Build project
         run: npm run build
         
       - name: Setup Pages
