@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ShieldCheck, Star, Activity, MessageCircle, Code, Smartphone } from 'lucide-react';
+import { Download, ShieldCheck, Star, Activity, MessageCircle, Code, Smartphone, AlertCircle } from 'lucide-react';
 
 const App = () => {
   return (
@@ -89,10 +89,22 @@ const App = () => {
                 دخول أصحاب الآيفون 
               </a>
             </div>
-            {/* ملاحظة صغيرة للتوضيح */}
-            <p className="text-[10px] text-slate-400 text-center sm:text-right mt-1 font-bold">
-              * لمستخدمي الآيفون: افتح الرابط واضغط على (إضافة للشاشة الرئيسية)
-            </p>
+
+            {/* ================= ملاحظات وتوجيهات التحميل ================= */}
+            <div className="flex flex-col gap-2 mt-2 bg-white/5 border border-white/10 p-3 rounded-xl">
+               <div className="flex items-start gap-2">
+                 <AlertCircle size={14} className="text-amber-400 shrink-0 mt-0.5" />
+                 <p className="text-[10px] md:text-xs text-slate-300 font-bold leading-relaxed">
+                   <span className="text-amber-400">لمستخدمي أندرويد:</span> عند التحميل، قد يظهر تنبيه أن الملف "قد يكون ضاراً" (لأنه من خارج المتجر). اضغط على <span className="text-white font-black">(التنزيل على أي حال)</span>، ثم افتح الملف واضغط <span className="text-white font-black">(تثبيت)</span>، التطبيق آمن 100%.
+                 </p>
+               </div>
+               <div className="flex items-start gap-2 border-t border-white/10 pt-2">
+                 <AlertCircle size={14} className="text-blue-400 shrink-0 mt-0.5" />
+                 <p className="text-[10px] md:text-xs text-slate-300 font-bold leading-relaxed">
+                   <span className="text-blue-400">لمستخدمي الآيفون:</span> اضغط على زر الآيفون أعلاه، وبمجرد فتح الصفحة، اضغط على أيقونة المشاركة في المتصفح ثم اختر <span className="text-white font-black">(إضافة إلى الشاشة الرئيسية)</span> ليصبح كتطبيق عادي.
+                 </p>
+               </div>
+            </div>
 
           </div>
 
