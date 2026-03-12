@@ -25,7 +25,7 @@ const App = () => {
                   الإصدار الجديد متوفر الآن
                 </span>
                 <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight">
-                  راصد للآباء
+                  راصد لولي الأمر
                 </h1>
               </div>
             </div>
