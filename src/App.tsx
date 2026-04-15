@@ -70,7 +70,7 @@ const App = () => {
             <div className="mt-4 flex flex-col sm:flex-row items-center gap-3">
               {/* زر الأندرويد */}
               <a 
-                href="./Rased-Parents.apk" 
+                href="https://play.google.com/store/apps/details?id=com.rased.parents&pcampaignid=web_share" 
                 download
                 className="flex-1 flex w-full justify-center bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(245,158,11,0.3)] hover:scale-105 transition-transform"
               >
