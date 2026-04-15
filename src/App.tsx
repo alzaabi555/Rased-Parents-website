@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ShieldCheck, Star, Activity, MessageCircle, Code, Smartphone, AlertCircle } from 'lucide-react';
+import { Download, ShieldCheck, Star, Activity, MessageCircle, Code, Smartphone, AlertCircle, Play, ShoppingBag } from 'lucide-react';
 
 const App = () => {
   return (
@@ -66,27 +66,36 @@ const App = () => {
               </div>
             </div>
 
-            {/* ================= أزرار التحميل (أندرويد وآيفون) ================= */}
-            <div className="mt-4 flex flex-col sm:flex-row items-center gap-3">
-              {/* زر الأندرويد */}
+            {/* ================= أزرار التحميل (جوجل، هواوي، آيفون) ================= */}
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {/* زر جوجل بلاي */}
               <a 
                 href="https://play.google.com/store/apps/details?id=com.rased.parents&pcampaignid=web_share" 
-                download
-                className="flex-1 flex w-full justify-center bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(245,158,11,0.3)] hover:scale-105 transition-transform"
+                target="_blank" rel="noopener noreferrer"
+                className="flex w-full justify-center bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white px-3 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(16,185,129,0.3)] hover:scale-105 transition-transform"
               >
-                <Download size={18} />
-               اجهزة الاندرويد ( التثبيت من المتجر) 
+                <Play size={18} fill="currentColor" />
+                جوجل بلاي
               </a>
 
-              {/* زر الآيفون الجديد */}
+              {/* زر هواوي */}
+              <a 
+                href="https://appgallery.huawei.com/#/app/C117204237" 
+                target="_blank" rel="noopener noreferrer"
+                className="flex w-full justify-center bg-gradient-to-r from-[#ce0e2d] to-[#a80b24] hover:from-[#a80b24] hover:to-[#85081c] text-white px-3 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(206,14,45,0.3)] hover:scale-105 transition-transform"
+              >
+                <ShoppingBag size={18} />
+                متجر هواوي
+              </a>
+
+              {/* زر الآيفون */}
               <a 
                 href="https://alzaabi555.github.io/rased-parents-app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex-1 flex w-full justify-center bg-slate-800/80 hover:bg-slate-700 border border-slate-600 text-white px-4 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(15,23,42,0.3)] hover:scale-105 transition-transform backdrop-blur-sm"
+                target="_blank" rel="noopener noreferrer"
+                className="flex w-full justify-center bg-slate-800/80 hover:bg-slate-700 border border-slate-600 text-white px-3 py-3.5 rounded-xl font-black text-sm items-center gap-2 shadow-[0_8px_20px_rgba(15,23,42,0.3)] hover:scale-105 transition-transform backdrop-blur-sm"
               >
                 <Smartphone size={18} />
-                دخول أصحاب الآيفون 
+                دخول الآيفون 
               </a>
             </div>
 
@@ -95,7 +104,7 @@ const App = () => {
                <div className="flex items-start gap-2">
                  <AlertCircle size={14} className="text-amber-400 shrink-0 mt-0.5" />
                  <p className="text-[10px] md:text-xs text-slate-300 font-bold leading-relaxed">
-                   <span className="text-amber-400">لمستخدمي أندرويد:</span>  اضغط على تثبيت <span className="text-white font-black">التحويل الى متجر جوجل بلي </span>،  الضغط على تثبيت  <span className="text-white font-black">(تثبيت)</span>، التطبيق آمن 100%.
+                   <span className="text-amber-400">لمستخدمي أندرويد وهواوي:</span> اضغط على زر المتجر الخاص بجهازك، ثم اضغط على <span className="text-white font-black">(تثبيت)</span>. التطبيق آمن 100%.
                  </p>
                </div>
                <div className="flex items-start gap-2 border-t border-white/10 pt-2">
